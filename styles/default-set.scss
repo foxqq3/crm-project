@@ -1,0 +1,31 @@
+body {
+    // @include font-size("medium");
+    // font-family: map-get($font-family, "main");
+    line-height: 1.5em;
+    font-weight: 400;
+    // color: map-get($colors, "boulder");
+    // background-color: map-get($colors , "white");
+}
+
+body.dark-theme{
+    // color: map-get($colors, "white");
+    // background-color: map-get($colors, "woodsmoke");
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul li,
+menu li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
