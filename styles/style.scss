@@ -1,23 +1,28 @@
 //fonts
 
 //variables
+@import 'variables.scss';
 
 //functions
+@import 'functions/function';
 
 //mixins
+@import 'mixins/mixins';
 
 //base
-@import 'default-set.scss';
+@import 'normalize.scss';
+@import 'default-set';
 
 //utilits
 
 //components
 
+//wrappers
+@import 'wrappers/default-containers';
+
 //layouts
 
 
-.red-test {
-    color: red;
-    font-size: 72px;
-    
-}
+//pages
+//index-page
+@import 'pages/index-page/login';

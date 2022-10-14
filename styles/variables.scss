@@ -1,0 +1,40 @@
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+//breakpoints
+$breakpoint: (
+    'tablet': 600px,
+    'tablet-horizontal': 900px,
+    'desktop': 1200px,
+);
+
+// colors
+$colors: (
+    'cornflower-blue': #5e81f4,
+    'white': #ffffff,
+);
+
+//fonts
+$font-family: (
+    'main': (
+        'Lato',
+        sans-serif,
+    ),
+);
+
+$font-size: (
+    'xsmall': 12px,
+    'small': 14px,
+    'medium': 16px,
+    'large': 18px,
+    'xlarge': 20px,
+    'xxlarge': 26px,
+    'huge': 32px,
+);
+
+//spacing
+$spacing-default-ratio: 4px;
+
+//shadow
+// $default-box-shadow: 0px 1px 10px rgba(map-get($colors, "black"), 0.1);
+// $orange-box-shadow: 0px 1px 10px rgba(map-get($colors, "international-orange"), 0.4);

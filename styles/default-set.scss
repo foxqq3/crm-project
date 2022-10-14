@@ -1,15 +1,11 @@
 body {
-    // @include font-size("medium");
-    // font-family: map-get($font-family, "main");
-    line-height: 1.5em;
+    // margin: 0;
+    // padding: 0;
+    @include font-size-half('medium');
+    font-family: map-get($font-family, 'main');
     font-weight: 400;
     // color: map-get($colors, "boulder");
     // background-color: map-get($colors , "white");
-}
-
-body.dark-theme{
-    // color: map-get($colors, "white");
-    // background-color: map-get($colors, "woodsmoke");
 }
 
 *,

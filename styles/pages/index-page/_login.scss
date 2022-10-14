@@ -1,0 +1,51 @@
+.login {
+    @include bg-color('cornflower-blue');
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('img/index-page/vector-bg.svg');
+    background-position: center spacing(-20);
+    background-repeat: no-repeat;
+
+    &__header{
+        margin: auto 0;
+        padding: spacing(23) 0 spacing(25);
+    }
+
+    &__logo {
+        text-align: center;
+    }
+
+    &__title {
+        @include font-size-quarter('huge');
+        @include color('white');
+        margin: spacing(3) 0 0;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__sub-title {
+        @include color('white');
+        margin: spacing(1) 0 0;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        background-color: #fff;
+        margin: 0 spacing(-6) spacing(-10);
+        border-radius: 16px 16px 0px 0px;
+    }
+
+    &__form-buttons {
+        display: flex;
+    }
+}
+
+.btn {
+    display: inline-flex;
+    flex-grow: 1;
+}

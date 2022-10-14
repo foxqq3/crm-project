@@ -1,0 +1,4 @@
+// Distance calculation
+@function spacing($value) {
+    @return $value * $spacing-default-ratio;
+}

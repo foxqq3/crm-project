@@ -1,0 +1,25 @@
+//font-size
+@mixin font-size-half($value) {
+  $value: map-get($font-size, $value);
+  font-size: $value;
+  line-height: 1.5em;
+}
+
+@mixin font-size-quarter($value) {
+  $value: map-get($font-size, $value);
+  font-size: $value;
+  line-height: 1.25em;
+}
+
+//colors
+//color-text
+@mixin color($value) {
+  $value: map-get($colors, $value);
+  color: $value;
+}
+
+//color-bg
+@mixin bg-color($value) {
+  $value: map-get($colors, $value);
+  background-color: $value;
+}
