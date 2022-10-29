@@ -23,3 +23,29 @@
   $value: map-get($colors, $value);
   background-color: $value;
 }
+
+@mixin br-color($value) {
+  $value: map-get($colors, $value);
+  border-color: $value;
+}
+
+//text ellipsis
+@mixin text-ellipsis($maxWidth: 100%) {
+  max-width: $maxWidth;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+
+//breakpoint
+@mixin breakpoint($name) {
+  @if map-has-key($breakpoint-default, $name) {
+    @media (min-width: map-get($breakpoint-default, $name)) {
+      @content;
+    }
+  } @else {
+    @error 'Unable to find a breakpoint with name `#{$name}`. Expected one of: (#{map.keys($breakpoints)})';
+  }
+}

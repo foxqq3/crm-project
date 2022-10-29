@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
 //breakpoints
-$breakpoint: (
+$breakpoint-default: (
     'tablet': 600px,
     'tablet-horizontal': 900px,
     'desktop': 1200px,
@@ -10,7 +10,12 @@ $breakpoint: (
 
 // colors
 $colors: (
+    'san-marino': #475eaa,
     'cornflower-blue': #5e81f4,
+    'howkes-blue': #eff2fe,
+    'waterloo': #8181a5,
+    'wild-sand': #f6f6f6,
+    'athens-gray': #f0f0f3,
     'white': #ffffff,
 );
 

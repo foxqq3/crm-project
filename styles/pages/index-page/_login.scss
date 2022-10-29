@@ -1,19 +1,36 @@
 .login {
     @include bg-color('cornflower-blue');
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
     background-image: url('img/index-page/vector-bg.svg');
     background-position: center spacing(-20);
     background-repeat: no-repeat;
 
-    &__header{
+    @include breakpoint('tablet-horizontal'){
+        display: flex;
+        background-image: none;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        padding: 0 spacing(6) spacing(10);
+
+        @include breakpoint('tablet-horizontal'){
+            flex-grow: 4;
+        }
+    }
+
+    &__header {
         margin: auto 0;
-        padding: spacing(23) 0 spacing(25);
+        padding: spacing(20) 0 spacing(22);
     }
 
     &__logo {
         text-align: center;
+
+        @include breakpoint('tablet-horizontal'){
+            display: none;
+        }
     }
 
     &__title {
@@ -31,21 +48,79 @@
         text-align: center;
     }
 
-    &__form{
+    &__form {
+        @include bg-color('white');
         display: flex;
         flex-direction: column;
-        height: 200px;
-        background-color: #fff;
+        gap: spacing(4);
         margin: 0 spacing(-6) spacing(-10);
+        padding: spacing(5) spacing(6) spacing(10);
         border-radius: 16px 16px 0px 0px;
+
+        @include breakpoint('tablet') {
+            padding: spacing(11) spacing(12) spacing(16);
+        }
+    }
+
+    &__field-container {
+        display: flex;
+        flex-direction: column;
+        gap: spacing(2);
+    }
+
+    &__name-field {
+        @include font-size-half('small');
+    }
+
+    &__entry-field {
+        @include font-size-half('small');
+        padding-bottom: spacing(5);
+        border: none;
+        border-bottom: solid 1px;
+        @include br-color('athens-gray');
+
+        &:focus {
+            @include br-color('san-marino');
+            outline: none;
+        }
     }
 
     &__form-buttons {
         display: flex;
+        gap: spacing(3);
+    }
+
+    &__sign-with {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: spacing(5);
+        margin-top: spacing(1);
+    }
+
+    &__sign-with-title {
+        @include color('waterloo');
+        margin: 0;
+    }
+
+    &__sign-with-icons {
+        display: flex;
+        gap: spacing(2);
+        margin: 0;
+        padding: 0;
+    }
+
+    &__sign-with-item {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__main-image {
+        width: 100px;
+
+        @include breakpoint('tablet-horizontal'){
+            flex-grow: 7;
+        }
     }
 }
 
-.btn {
-    display: inline-flex;
-    flex-grow: 1;
-}
