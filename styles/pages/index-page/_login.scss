@@ -1,6 +1,6 @@
 .login {
     @include bg-color('cornflower-blue');
-    background-image: url('img/index-page/vector-bg.png');
+    background-image: url('/img/index-page/vector-bg-main.svg');
     background-position: center spacing(-20);
     background-repeat: no-repeat;
 
@@ -70,14 +70,20 @@
 
     &__name-field {
         @include font-size-half('small');
+        @include color('waterloo');
     }
 
     &__entry-field {
         @include font-size-half('small');
         padding-bottom: spacing(5);
+        font-weight: 700;
         border: none;
         border-bottom: solid 1px;
         @include br-color('athens-gray');
+        
+        &::placeholder {
+            @include color('waterloo');
+        }
 
         &:focus {
             @include br-color('san-marino');
