@@ -4,7 +4,7 @@
     background-position: center spacing(-20);
     background-repeat: no-repeat;
 
-    @include breakpoint('tablet-horizontal'){
+    @include breakpoint('tablet-horizontal') {
         display: flex;
         background-image: none;
     }
@@ -15,7 +15,7 @@
         height: 100vh;
         padding: 0 spacing(6) spacing(10);
 
-        @include breakpoint('tablet-horizontal'){
+        @include breakpoint('tablet-horizontal') {
             flex-grow: 4;
         }
     }
@@ -28,7 +28,7 @@
     &__logo {
         text-align: center;
 
-        @include breakpoint('tablet-horizontal'){
+        @include breakpoint('tablet-horizontal') {
             display: none;
         }
     }
@@ -75,12 +75,30 @@
 
     &__entry-field {
         @include font-size-half('small');
-        padding-bottom: spacing(5);
+        padding: 0 spacing(5) spacing(5) 0;
         font-weight: 700;
         border: none;
         border-bottom: solid 1px;
         @include br-color('athens-gray');
-        
+
+        &#full-name {
+            background-image: url(/img/some-icons/person.svg);
+            background-repeat: no-repeat;
+            background-position: 100% 20%;
+        }
+
+        &#email {
+            background-image: url(/img/some-icons/email.svg);
+            background-repeat: no-repeat;
+            background-position: 100% 20%;
+        }
+
+        &#password {
+            background-image: url(/img/some-icons/lock.svg);
+            background-repeat: no-repeat;
+            background-position: 100% 20%;
+        }
+
         &::placeholder {
             @include color('waterloo');
         }
@@ -124,9 +142,8 @@
     &__main-image {
         width: 100px;
 
-        @include breakpoint('tablet-horizontal'){
+        @include breakpoint('tablet-horizontal') {
             flex-grow: 7;
         }
     }
 }
-
