@@ -38,13 +38,18 @@
         </div>
         <form class="login__form">
           <div class="login__field-container">
-            <label for="full-name" class="login__name-field">Full name</label>
-            <input
-              type="text"
-              id="full-name"
-              class="login__entry-field"
-              placeholder="Start typing…"
-            />
+            <div class="app-input">
+              <label for="full-name" class="login__label">Full name</label>
+              <div class="app-input__input-container">
+                <input
+                  type="text"
+                  id="full-name"
+                  class="app-input__entry-field"
+                  placeholder="Start typing…"
+                />
+                <div class="app-input__append-slot"></div>
+              </div>
+            </div>
           </div>
           <div class="login__field-container">
             <label for="email" class="login__name-field">Email</label>
@@ -144,8 +149,7 @@
           </div>
         </form>
       </div>
-      <div class="login__main-image">
-      </div>
+      <div class="login__main-image"></div>
     </div>
     <script type="module" src="/main.js"></script>
   </body>

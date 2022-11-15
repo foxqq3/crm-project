@@ -81,24 +81,6 @@
         border-bottom: solid 1px;
         @include br-color('athens-gray');
 
-        &#full-name {
-            background-image: url(/img/some-icons/person.svg);
-            background-repeat: no-repeat;
-            background-position: 100% 20%;
-        }
-
-        &#email {
-            background-image: url(/img/some-icons/email.svg);
-            background-repeat: no-repeat;
-            background-position: 100% 20%;
-        }
-
-        &#password {
-            background-image: url(/img/some-icons/lock.svg);
-            background-repeat: no-repeat;
-            background-position: 100% 20%;
-        }
-
         &::placeholder {
             @include color('waterloo');
         }
