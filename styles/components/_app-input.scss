@@ -1,0 +1,45 @@
+.app-input {
+    display: flex;
+    flex-direction: column;
+    gap: spacing(2);
+    &__label {
+        @include font-size-half('small');
+        @include color('waterloo');
+    }
+
+    &__input-container {
+        display: flex;
+        border-bottom: 1px solid;
+        @include br-color ('athens-gray');
+    }
+
+    &__entry-field {
+        @include font-size-half('small');
+        width: 100%;
+        padding: 0 spacing(1) spacing(5) 0;
+        font-weight: 700;
+        border: none;
+
+        &::placeholder {
+            @include color('waterloo');
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__prepend-slot {
+        width: spacing(5);
+        height: spacing(5);
+    }
+
+    &__append-slot {
+        width: spacing(5);
+        height: spacing(5);
+    }
+
+    // &__message{
+
+    // }
+}

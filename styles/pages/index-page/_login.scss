@@ -1,5 +1,6 @@
 .login {
     @include bg-color('cornflower-blue');
+    position: relative;
     background-image: url('/img/index-page/vector-bg.svg');
     background-position: center spacing(-20);
     background-repeat: no-repeat;
@@ -13,16 +14,33 @@
         display: flex;
         flex-direction: column;
         height: 100vh;
+
+        @include breakpoint('tablet-horizontal') {
+            @include bg-color('white');
+            flex-grow: 1;
+            max-width: 55%;
+        }
+    }
+
+    &__content-container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
         padding: 0 spacing(6) spacing(10);
 
         @include breakpoint('tablet-horizontal') {
-            flex-grow: 4;
+            flex-grow: 1;
+            padding: 0;
+            max-width: spacing(95);
         }
     }
 
     &__header {
         margin: auto 0;
         padding: spacing(20) 0 spacing(22);
+
+        @include breakpoint('tablet-horizontal') {
+        }
     }
 
     &__logo {
@@ -39,6 +57,13 @@
         margin: spacing(3) 0 0;
         font-weight: 700;
         text-align: center;
+    }
+
+    &__title-add {
+        display: none;
+        @include breakpoint('tablet-horizontal') {
+            display: inline;
+        }
     }
 
     &__sub-title {
@@ -60,40 +85,17 @@
         @include breakpoint('tablet') {
             padding: spacing(11) spacing(12) spacing(16);
         }
-    }
 
-    &__field-container {
-        display: flex;
-        flex-direction: column;
-        gap: spacing(2);
-    }
-
-    &__name-field {
-        @include font-size-half('small');
-        @include color('waterloo');
-    }
-
-    &__entry-field {
-        @include font-size-half('small');
-        padding: 0 spacing(5) spacing(5) 0;
-        font-weight: 700;
-        border: none;
-        border-bottom: solid 1px;
-        @include br-color('athens-gray');
-
-        &::placeholder {
-            @include color('waterloo');
-        }
-
-        &:focus {
-            @include br-color('san-marino');
-            outline: none;
+        @include breakpoint('tablet-horizontal') {
+            width: 100%;
+            padding: 0;
         }
     }
 
     &__form-buttons {
         display: flex;
         gap: spacing(3);
+        margin-top: spacing(6);
     }
 
     &__sign-with {
@@ -119,13 +121,5 @@
     &__sign-with-item {
         margin: 0;
         padding: 0;
-    }
-
-    &__main-image {
-        width: 100px;
-
-        @include breakpoint('tablet-horizontal') {
-            flex-grow: 7;
-        }
     }
 }

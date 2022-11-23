@@ -1,156 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="img/main-logo/logo.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CRM project</title>
-  </head>
-  <body>
-    <div class="login">
-      <div class="login__content">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="img/main-logo/logo.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRM project</title>
+</head>
+
+<body>
+  <div class="login">
+    <div class="login__content">
+      <div class="login__content-container">
+
         <div class="login__header">
           <div class="login__logo">
-            <svg
-              width="49"
-              height="49"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                opacity=".15"
-                d="M24 41c9.389 0 17-7.611 17-17S33.389 7 24 7 7 14.611 7 24s7.611 17 17 17Z"
-                fill="#fff"
-              />
-              <path
-                opacity=".4"
+            <svg width="49" height="49" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity=".15" d="M24 41c9.389 0 17-7.611 17-17S33.389 7 24 7 7 14.611 7 24s7.611 17 17 17Z"
+                fill="#fff" />
+              <path opacity=".4"
                 d="M10.502 21A10.505 10.505 0 0 1 3.07 3.075c4.102-4.1 10.75-4.1 14.853 0a10.498 10.498 0 0 1 0 14.853A10.412 10.412 0 0 1 10.502 21ZM38.504 49a10.5 10.5 0 1 1 7.416-3.07A10.432 10.432 0 0 1 38.504 49Z"
-                fill="#fff"
-              />
+                fill="#fff" />
               <path
                 d="M10.485 48.98a10.475 10.475 0 0 1-9.683-6.45A10.456 10.456 0 0 1 3.06 31.125c.457-.445.954-.848 1.485-1.204l.513-.326c.36-.213.732-.406 1.125-.592.2-.086.4-.18.62-.26.408-.148.826-.27 1.251-.365l.266-.073c.046-.017.093-.03.14-.04l2.371-.173c.306 0 .666.06.992.106h1.226a15.324 15.324 0 0 0 10.86-4.656 15.206 15.206 0 0 0 4.356-10.957v-.226a2.449 2.449 0 0 1-.04-.386v-.32l-.087-.305c0-.186-.047-.386-.053-.579l.16-2.195V8.48c0-.054.1-.346.1-.346.1-.451.23-.896.386-1.33.073-.2.166-.4.26-.6.174-.393.374-.776.599-1.144v-.06c.093-.152.18-.305.286-.452a9.988 9.988 0 0 1 1.192-1.47c4.097-4.1 10.745-4.106 14.85-.013 4.104 4.093 4.11 10.734.013 14.834-.455.442-.95.84-1.478 1.191-.16.113-.3.193-.44.28l-.08.046c-.386.226-.759.426-1.118.592-.213.093-.407.186-.606.26-.42.152-.85.279-1.286.379-.092.02-.183.044-.273.073l-.166.046-2.324.16c-.293 0-.606-.053-.932-.093h-1.266c-8.493.124-15.293 7.075-15.222 15.56V36.627c.018.116.029.234.033.352 0 .127 0 .246.033.366.034.12 0 .226.04.346.023.172.037.345.04.519l-.166 2.282c-.013.06-.028.12-.047.18l-.06.206a9.88 9.88 0 0 1-.38 1.33c-.073.2-.172.406-.266.612-.169.384-.358.76-.566 1.124a6.176 6.176 0 0 1-.32.512 9.878 9.878 0 0 1-1.205 1.484A10.413 10.413 0 0 1 10.485 49v-.02Z"
-                fill="#fff"
-              />
+                fill="#fff" />
             </svg>
           </div>
-          <h1 class="login__title">Welcome to our CRM</h1>
+          <h1 class="login__title">Welcome to our CRM<span class="login__title-add">. Sign Up to getting started.</span>
+          </h1>
           <p class="login__sub-title">Enter your details to proceed further</p>
         </div>
         <form class="login__form">
-          <div class="login__field-container">
-            <div class="app-input">
-              <label for="full-name" class="login__label">Full name</label>
-              <div class="app-input__input-container">
-                <input
-                  type="text"
-                  id="full-name"
-                  class="app-input__entry-field"
-                  placeholder="Start typing…"
-                />
-                <div class="app-input__append-slot"></div>
+          <div class="app-input">
+            <label for="full-name" class="app-input__label">Full name</label>
+            <div class="app-input__input-container">
+              <input type="text" id="full-name" class="app-input__entry-field" placeholder="Start typing…" />
+              <div class="app-input__append-slot">
+                <svg width="20" height="20" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6 0.0625C5.28516 0.0625 4.62305 0.238281 4.01367 0.589844C3.41602 0.941406 2.94141 1.42188 2.58984 2.03125C2.23828 2.62891 2.0625 3.28516 2.0625 4C2.0625 4.66797 2.21484 5.28906 2.51953 5.86328C2.83594 6.4375 3.26367 6.90625 3.80273 7.26953C3.13477 7.5625 2.53711 7.9668 2.00977 8.48242C1.49414 8.99805 1.0957 9.58984 0.814453 10.2578C0.521484 10.9492 0.375 11.6758 0.375 12.4375H1.5C1.5 11.6406 1.69336 10.9023 2.08008 10.2227C2.4668 9.54297 2.98828 9.00391 3.64453 8.60547C3.83203 9.07422 4.13672 9.45508 4.55859 9.74805C4.99219 10.041 5.47266 10.1875 6 10.1875C6.52734 10.1875 7.00195 10.041 7.42383 9.74805C7.85742 9.45508 8.16797 9.07422 8.35547 8.60547C9.01172 9.00391 9.5332 9.54297 9.91992 10.2227C10.3066 10.9023 10.5 11.6406 10.5 12.4375H11.625C11.625 11.6758 11.4785 10.9492 11.1855 10.2578C10.9043 9.58984 10.5 8.99805 9.97266 8.48242C9.45703 7.9668 8.86523 7.5625 8.19727 7.26953C8.73633 6.90625 9.1582 6.4375 9.46289 5.86328C9.7793 5.28906 9.9375 4.66797 9.9375 4C9.9375 3.28516 9.76172 2.62891 9.41016 2.03125C9.05859 1.42188 8.57812 0.941406 7.96875 0.589844C7.37109 0.238281 6.71484 0.0625 6 0.0625ZM6 1.1875C6.51562 1.1875 6.98438 1.31641 7.40625 1.57422C7.83984 1.82031 8.17969 2.16016 8.42578 2.59375C8.68359 3.01562 8.8125 3.48437 8.8125 4C8.8125 4.51562 8.68359 4.99023 8.42578 5.42383C8.17969 5.8457 7.83984 6.18555 7.40625 6.44336C6.98438 6.68945 6.51562 6.8125 6 6.8125C5.48438 6.8125 5.00977 6.68945 4.57617 6.44336C4.1543 6.18555 3.81445 5.8457 3.55664 5.42383C3.31055 4.99023 3.1875 4.51562 3.1875 4C3.1875 3.48437 3.31055 3.01562 3.55664 2.59375C3.81445 2.16016 4.1543 1.82031 4.57617 1.57422C5.00977 1.31641 5.48438 1.1875 6 1.1875ZM6 7.9375C6.45703 7.9375 6.89648 8.00195 7.31836 8.13086C7.22461 8.41211 7.05469 8.64062 6.80859 8.81641C6.57422 8.98047 6.30469 9.0625 6 9.0625C5.69531 9.0625 5.41992 8.98047 5.17383 8.81641C4.93945 8.64062 4.77539 8.41211 4.68164 8.13086C5.10352 8.00195 5.54297 7.9375 6 7.9375Z"
+                    fill="#8181A5" />
+                </svg>
               </div>
             </div>
           </div>
-          <div class="login__field-container">
-            <label for="email" class="login__name-field">Email</label>
-            <input
-              type="email"
-              id="email"
-              class="login__entry-field"
-              placeholder="Start typing…"
-            />
-          </div>
-          <div class="login__field-container">
-            <label for="password" class="login__name-field">Password</label>
-            <input
-              type="password"
-              id="password"
-              class="login__entry-field"
-              placeholder="Start typing…"
-            />
-          </div>
-          <div class="login__form-buttons">
-            <input class="btn" type="button" value="Sign up" />
-            <input class="btn" type="button" value="Sign in" />
-          </div>
-          <div class="login__sign-with">
-            <p class="login__sign-with-title">Or sign width</p>
-            <ul class="login__sign-with-icons">
-              <li class="login__with-sign-with-item">
-                <a href="">
-                  <svg
-                    width="46"
-                    height="46"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect
-                      x=".5"
-                      y=".5"
-                      width="45"
-                      height="45"
-                      rx="7.5"
-                      stroke="#ECECF2"
-                    />
+          <div class="app-input">
+            <label for="email" class="app-input__label">Email</label>
+            <div class="app-input__input-container">
+              <input type="email" id="email" class="app-input__entry-field" placeholder="Start typing…" />
+              <div class="app-input__append-slot">
+                <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8 0.9375L7.70117 1.13086L0.6875 5.70117V15.5625H15.3125V5.70117L8.29883 1.13086L8 0.9375ZM8 2.27344L13.7305 6L8 9.70898L2.26953 6L8 2.27344ZM1.8125 7.03711L7.70117 10.8516L8 11.0449L14.1875 7.03711V14.4375H1.8125V7.03711Z"
+                    fill="#8181A5" />
+                </svg>
+              </div>
+            </div>
+            <div class="app-input">
+              <label for="password" class="app-input__label">Password</label>
+              <div class="app-input__input-container">
+                <input type="password" id="password" class="app-input__entry-field" placeholder="Start typing…" />
+                <div class="app-input__append-slot">
+                  <svg width="20" height="20" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
-                      d="M29.25 19.066a5.73 5.73 0 0 1-1.371 1.442v.351c0 .938-.176 1.864-.527 2.778a8.955 8.955 0 0 1-1.495 2.531c-.644.773-1.476 1.395-2.496 1.863-1.02.469-2.138.703-3.357.703a7.765 7.765 0 0 1-4.254-1.23c.21.023.434.035.668.035a5.405 5.405 0 0 0 3.445-1.195c-.61 0-1.148-.182-1.617-.545a2.866 2.866 0 0 1-.984-1.389c.164.047.34.07.527.07.258 0 .504-.035.738-.105a2.82 2.82 0 0 1-1.617-.967 2.632 2.632 0 0 1-.633-1.74v-.035c.399.21.82.328 1.266.351-.82-.562-1.23-1.336-1.23-2.32 0-.492.128-.96.386-1.406 1.477 1.828 3.375 2.8 5.695 2.918a2.914 2.914 0 0 1-.07-.633c0-.773.27-1.43.809-1.969a2.68 2.68 0 0 1 1.969-.808c.796 0 1.464.293 2.003.879a5.158 5.158 0 0 0 1.758-.668 2.654 2.654 0 0 1-1.195 1.511 6.324 6.324 0 0 0 1.582-.422Z"
-                      fill="#8181A5"
-                    />
+                      d="M6 0.9375C5.29688 0.9375 4.64062 1.11914 4.03125 1.48242C3.43359 1.83398 2.95312 2.31445 2.58984 2.92383C2.23828 3.52148 2.0625 4.17188 2.0625 4.875V6.5625H0.375V15.5625H11.625V6.5625H9.9375V4.875C9.9375 4.17188 9.75586 3.52148 9.39258 2.92383C9.04102 2.31445 8.56055 1.83398 7.95117 1.48242C7.35352 1.11914 6.70312 0.9375 6 0.9375ZM6 2.0625C6.50391 2.0625 6.97266 2.19141 7.40625 2.44922C7.83984 2.69531 8.17969 3.03516 8.42578 3.46875C8.68359 3.90234 8.8125 4.37109 8.8125 4.875V6.5625H3.1875V4.875C3.1875 4.37109 3.31055 3.90234 3.55664 3.46875C3.81445 3.03516 4.16016 2.69531 4.59375 2.44922C5.02734 2.19141 5.49609 2.0625 6 2.0625ZM1.5 7.6875H10.5V14.4375H1.5V7.6875Z"
+                      fill="#8181A5" />
                   </svg>
-                </a>
-              </li>
-              <li class="login__with-sign-with-item">
-                <a href="">
-                  <svg
-                    width="46"
-                    height="46"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect
-                      x=".5"
-                      y=".5"
-                      width="45"
-                      height="45"
-                      rx="7.5"
-                      stroke="#ECECF2"
-                    />
-                    <path
-                      d="M22.96 21.812v2.376l3.222-.003c-.505 1.54-1.29 2.38-3.222 2.38-1.955 0-3.482-1.597-3.482-3.565s1.527-3.564 3.482-3.564c1.034 0 1.702.366 2.314.875.49-.493.45-.564 1.697-1.75A5.916 5.916 0 0 0 22.96 17C19.667 17 17 19.686 17 23s2.668 6 5.96 6c4.92 0 6.123-4.313 5.724-7.188H22.96Z"
-                      fill="#8181A5"
-                    />
-                  </svg>
-                </a>
-              </li>
-              <li class="login__with-sign-with-item">
-                <a href="">
-                  <svg
-                    width="46"
-                    height="46"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect
-                      x=".5"
-                      y=".5"
-                      width="45"
-                      height="45"
-                      rx="7.5"
-                      stroke="#ECECF2"
-                    />
-                    <path
-                      d="M24.344 30v-7h1.932l.256-2.413h-2.188l.003-1.208c0-.63.06-.966.964-.966h1.208V16h-1.933c-2.322 0-3.139 1.17-3.139 3.139v1.448H20V23h1.447v7h2.897Z"
-                      fill="#8181A5"
-                    />
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
+                </div>
+              </div>
+              <div class="login__form-buttons">
+                <input class="btn" type="button" value="Sign up" />
+                <input class="btn" type="button" value="Sign in" />
+              </div>
+              <div class="login__sign-with">
+                <p class="login__sign-with-title">Or sign width</p>
+                <ul class="login__sign-with-icons">
+                  <li class="login__with-sign-with-item">
+                    <a href="https://ru.wikipedia.org/wiki/%D0%A2%D0%B2%D0%B8%D1%82%D1%82%D0%B5%D1%80">
+                      <svg width="46" height="46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x=".5" y=".5" width="45" height="45" rx="7.5" stroke="#ECECF2" />
+                        <path
+                          d="M29.25 19.066a5.73 5.73 0 0 1-1.371 1.442v.351c0 .938-.176 1.864-.527 2.778a8.955 8.955 0 0 1-1.495 2.531c-.644.773-1.476 1.395-2.496 1.863-1.02.469-2.138.703-3.357.703a7.765 7.765 0 0 1-4.254-1.23c.21.023.434.035.668.035a5.405 5.405 0 0 0 3.445-1.195c-.61 0-1.148-.182-1.617-.545a2.866 2.866 0 0 1-.984-1.389c.164.047.34.07.527.07.258 0 .504-.035.738-.105a2.82 2.82 0 0 1-1.617-.967 2.632 2.632 0 0 1-.633-1.74v-.035c.399.21.82.328 1.266.351-.82-.562-1.23-1.336-1.23-2.32 0-.492.128-.96.386-1.406 1.477 1.828 3.375 2.8 5.695 2.918a2.914 2.914 0 0 1-.07-.633c0-.773.27-1.43.809-1.969a2.68 2.68 0 0 1 1.969-.808c.796 0 1.464.293 2.003.879a5.158 5.158 0 0 0 1.758-.668 2.654 2.654 0 0 1-1.195 1.511 6.324 6.324 0 0 0 1.582-.422Z"
+                          fill="#8181A5" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="login__with-sign-with-item">
+                    <a href="https://www.google.com/intl/ru/gmail/about/">
+                      <svg width="46" height="46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x=".5" y=".5" width="45" height="45" rx="7.5" stroke="#ECECF2" />
+                        <path
+                          d="M22.96 21.812v2.376l3.222-.003c-.505 1.54-1.29 2.38-3.222 2.38-1.955 0-3.482-1.597-3.482-3.565s1.527-3.564 3.482-3.564c1.034 0 1.702.366 2.314.875.49-.493.45-.564 1.697-1.75A5.916 5.916 0 0 0 22.96 17C19.667 17 17 19.686 17 23s2.668 6 5.96 6c4.92 0 6.123-4.313 5.724-7.188H22.96Z"
+                          fill="#8181A5" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="login__with-sign-with-item">
+                    <a href="https://ru.wikipedia.org/wiki/Facebook">
+                      <svg width="46" height="46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x=".5" y=".5" width="45" height="45" rx="7.5" stroke="#ECECF2" />
+                        <path
+                          d="M24.344 30v-7h1.932l.256-2.413h-2.188l.003-1.208c0-.63.06-.966.964-.966h1.208V16h-1.933c-2.322 0-3.139 1.17-3.139 3.139v1.448H20V23h1.447v7h2.897Z"
+                          fill="#8181A5" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
         </form>
       </div>
-      <div class="login__main-image"></div>
     </div>
-    <script type="module" src="/main.js"></script>
-  </body>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
