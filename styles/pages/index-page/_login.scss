@@ -17,8 +17,11 @@
 
         @include breakpoint('tablet-horizontal') {
             @include bg-color('white');
+            flex-direction: row;
             flex-grow: 1;
+            justify-content: center;
             width: 55%;
+            border-radius: 0 16px 16px 0;
         }
     }
 
@@ -30,9 +33,13 @@
 
         @include breakpoint('tablet-horizontal') {
             flex-grow: 1;
-            margin: 0 auto 0;
-            padding: spacing(10) 0;
-            max-width: spacing(95);
+            margin: 0 spacing(19) 0;
+            padding: spacing(6) 0;
+            max-width: spacing(110);
+        }
+
+        @include breakpoint('desktop') {
+            padding: spacing(9) 0;
         }
     }
 
@@ -62,6 +69,7 @@
         text-align: center;
 
         @include breakpoint('tablet-horizontal') {
+            @include font-size-quarter('xxlarge');
             @include color('shark');
             margin: 0;
             text-align: left;
@@ -70,7 +78,7 @@
 
     &__title-add {
         display: none;
-        @include breakpoint('tablet-horizontal') {
+        @include breakpoint('desktop') {
             display: inline;
         }
     }
@@ -108,10 +116,14 @@
         }
 
         @include breakpoint('tablet-horizontal') {
-            gap: spacing(6);
-            width: 100%;
-            margin: spacing(16) 0 auto;
+            gap: spacing(3);
+            margin: spacing(8) 0 auto;
             padding: 0;
+        }
+
+        @include breakpoint('desktop') {
+            gap: spacing(6);
+            margin-top: spacing(16);
         }
     }
 
@@ -120,7 +132,10 @@
 
         @include breakpoint('tablet-horizontal') {
             display: block;
-            margin-top: spacing(3);
+        }
+
+        @include breakpoint('desktop') {
+            margin-top: spacing(2);
         }
     }
 
@@ -128,20 +143,28 @@
         display: flex;
         gap: spacing(3);
         margin-top: spacing(6);
+
+        @include breakpoint('tablet-horizontal') {
+            margin-top: spacing(3);
+        }
     }
 
     &__sign-with {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: spacing(5);
+        gap: spacing(3);
         margin-top: spacing(1);
 
         @include breakpoint('tablet-horizontal') {
             flex-direction: row-reverse;
             justify-content: flex-end;
             gap: spacing(3);
-            margin-top: spacing(13);
+            margin-top: spacing(2);
+        }
+
+        @include breakpoint('desktop') {
+            margin-top: spacing(10);
         }
     }
 
@@ -152,7 +175,6 @@
         @include breakpoint('tablet-horizontal') {
             transform: translateY(-10%);
         }
-
     }
 
     &__sign-with-icons {
@@ -162,32 +184,50 @@
         padding: 0;
     }
 
-    &__sign-with-item {
-        margin: 0;
-        padding: 0;
+    &__sign-with-icon-container {
+        display: block;
+        width: 46px;
+        height: 46px;
+
+        @include breakpoint('tablet-horizontal') {
+            width: 40px;
+            height: 40px;
+        }
+
+        @include breakpoint('desktop') {
+            width: 46px;
+            height: 46px;
+        }
+    }
+
+    &__sign-with-icon {
+        width: 46px;
+        height: 46px;
+
+        @include breakpoint('tablet-horizontal') {
+            width: 40px;
+            height: 40px;
+        }
+
+        @include breakpoint('desktop') {
+            width: 46px;
+            height: 46px;
+        }
     }
 
     &__bg-image-container {
         display: none;
         @include breakpoint('tablet-horizontal') {
             display: block;
-            position: relative;
             width: 45%;
-            min-height: 805px;
-            overflow: hidden;
+            background-image: url('/img/index-page/vector-bg-main.svg');
+            background-position: right 30%;
+            background-size: 500px auto;
+            background-repeat: no-repeat;
+        }
+
+        @include breakpoint('desktop') {
+            background-size: 650px auto;
         }
     }
-
-    &__bg-image{
-        @include breakpoint('tablet-horizontal') {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center right;
-        }
-    }
-
 }
