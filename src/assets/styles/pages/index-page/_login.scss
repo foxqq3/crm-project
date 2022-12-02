@@ -1,6 +1,6 @@
 .login {
-    @include bg-color('cornflower-blue');
     position: relative;
+    background-color: color('cornflower-blue');
     background-image: url('/img/index-page/vector-bg.svg');
     background-position: center spacing(-20);
     background-repeat: no-repeat;
@@ -16,11 +16,11 @@
         min-height: 100vh;
 
         @include breakpoint('tablet-horizontal') {
-            @include bg-color('white');
             flex-direction: row;
             flex-grow: 1;
             justify-content: center;
             width: 55%;
+            background-color: color('white');
             border-radius: 0 16px 16px 0;
         }
     }
@@ -63,16 +63,16 @@
 
     &__title {
         @include font-size-quarter('huge');
-        @include color('white');
         margin: spacing(3) 0 0;
         font-weight: 700;
         text-align: center;
+        color: color('white');
 
         @include breakpoint('tablet-horizontal') {
             @include font-size-quarter('xxlarge');
-            @include color('shark');
             margin: 0;
             text-align: left;
+            color: color('shark');
         }
     }
 
@@ -84,10 +84,10 @@
     }
 
     &__sub-title {
-        @include color('white');
         margin: spacing(1) 0 0;
         font-weight: 700;
         text-align: center;
+        color: color('white');
 
         @include breakpoint('tablet') {
             margin-top: spacing(2);
@@ -95,20 +95,20 @@
 
         @include breakpoint('tablet-horizontal') {
             @include font-size-half('small');
-            @include color('waterloo');
             margin-top: spacing(3);
             font-weight: 400;
             text-align: left;
+            color: color('waterloo');
         }
     }
 
     &__form {
-        @include bg-color('white');
         display: flex;
         flex-direction: column;
         gap: spacing(4);
         margin: 0 spacing(-6) spacing(-10);
         padding: spacing(5) spacing(6) spacing(10);
+        background-color: ('white');
         border-radius: 16px 16px 0px 0px;
 
         @include breakpoint('tablet') {
@@ -169,8 +169,8 @@
     }
 
     &__sign-with-title {
-        @include color('waterloo');
         margin: 0;
+        color: color('waterloo');
 
         @include breakpoint('tablet-horizontal') {
             transform: translateY(-10%);

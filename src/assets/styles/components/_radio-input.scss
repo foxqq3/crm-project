@@ -1,0 +1,25 @@
+.radio-input {
+    display: flex;
+    &__check {
+        margin-right: spacing(2);
+    }
+
+    &__label {
+        @include font-size-quarter('medium');
+        color: color('shark');
+        font-weight: 700;
+
+        &:hover {
+            color: color('san-marino');
+        }
+
+        &:focus {
+            //need add another color
+            color: color('cornflower-blue');
+        }
+
+        &:active {
+            color: color('cornflower-blue');
+        }
+    }
+}

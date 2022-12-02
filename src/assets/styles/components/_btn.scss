@@ -1,8 +1,6 @@
 .btn {
     @include text-ellipsis();
     @include font-size-quarter('small');
-    @include color('cornflower-blue');
-    @include bg-color('howkes-blue');
     display: inline-flex;
     justify-content: center;
     width: 100%;
@@ -10,29 +8,30 @@
     font-family: inherit;
     font-weight: 700;
     text-align: center;
+    color: color('cornflower-blue');
+    background-color: color('howkes-blue');
     border: none;
     border-radius: 8px;
     transition: all 0.2s;
 
     &:hover {
-        @include color('white');
-        @include bg-color('san-marino');
+        color: color('white');
+        background-color: color('san-marino');
     }
 
     &:focus {
         //need add another color
-        @include color('white');
-        @include bg-color('cornflower-blue'); 
+        color: color('white');
+        background-color: color('cornflower-blue');
     }
 
     &:active {
-        @include color('white');
-        @include bg-color('cornflower-blue'); 
+        color: color('white');
+        background-color: color('cornflower-blue');
     }
 
     &:disabled {
-        @include color('waterloo');
-        @include bg-color('wild-sand'); 
+        color: color('waterloo');
+        background-color: color('wild-sand');
     }
 }
-

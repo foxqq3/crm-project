@@ -5,13 +5,13 @@
 
     &__label {
         @include font-size-half('small');
-        @include color('waterloo');
+        color: color('waterloo');
     }
 
     &__input-container {
         display: flex;
         border-bottom: 1px solid;
-        @include br-color ('athens-gray');
+        border-color: color('athens-gray');
     }
 
     &__entry-field {
@@ -22,7 +22,7 @@
         border: none;
 
         &::placeholder {
-            @include color('waterloo');
+            color: color('waterloo');
         }
 
         &:focus {
