@@ -31,13 +31,13 @@
     }
 
     &__prepend-slot {
-        width: spacing(5);
-        height: spacing(5);
+        font-size: spacing(5);
+        color: color('waterloo')
     }
 
     &__append-slot {
-        width: spacing(5);
-        height: spacing(5);
+        font-size: spacing(5);
+        color: color('waterloo')
     }
 
     // &__message{
