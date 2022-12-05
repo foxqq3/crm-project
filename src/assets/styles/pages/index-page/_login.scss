@@ -127,7 +127,7 @@
         }
     }
 
-    &__radio-input {
+    &__checkbox-input {
         display: none;
 
         @include breakpoint('tablet-horizontal') {
