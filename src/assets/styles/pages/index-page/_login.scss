@@ -1,238 +1,235 @@
 .login {
-    position: relative;
-    background-color: color('cornflower-blue');
-    background-image: url('/img/index-page/vector-bg.svg');
-    background-position: center spacing(-20);
-    background-repeat: no-repeat;
+  position: relative;
+  background-color: color('cornflower-blue');
+  background-image: url('/img/index-page/vector-bg.svg');
+  background-position: center spacing(-20);
+  background-repeat: no-repeat;
+
+  @include breakpoint('tablet-horizontal') {
+    display: flex;
+    background-image: none;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 
     @include breakpoint('tablet-horizontal') {
-        display: flex;
-        background-image: none;
+      flex-direction: row;
+      flex-grow: 1;
+      justify-content: center;
+      width: 55%;
+      background-color: color('white');
+      border-radius: 0 16px 16px 0;
+    }
+  }
+
+  &__content-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0 spacing(6) spacing(10);
+
+    @include breakpoint('tablet-horizontal') {
+      flex-grow: 1;
+      margin: 0 spacing(19) 0;
+      padding: spacing(6) 0;
+      max-width: spacing(110);
     }
 
-    &__content {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
+    @include breakpoint('desktop') {
+      padding: spacing(9) 0;
+    }
+  }
 
-        @include breakpoint('tablet-horizontal') {
-            flex-direction: row;
-            flex-grow: 1;
-            justify-content: center;
-            width: 55%;
-            background-color: color('white');
-            border-radius: 0 16px 16px 0;
-        }
+  &__header {
+    margin: auto 0;
+    padding: spacing(20) 0 spacing(22);
+
+    @include breakpoint('tablet-horizontal') {
+      margin: auto 0 0;
+      padding: 0;
+    }
+  }
+
+  &__logo {
+    text-align: center;
+
+    @include breakpoint('tablet-horizontal') {
+      display: none;
+    }
+  }
+
+  &__title {
+    margin: spacing(3) 0 0;
+    text-align: center;
+    color: color('white');
+
+    @include breakpoint('tablet-horizontal') {
+      margin: 0;
+      text-align: left;
+      color: color('shark');
+    }
+  }
+
+  &__title-add {
+    display: none;
+    @include breakpoint('desktop') {
+      display: inline;
+    }
+  }
+
+  &__sub-title {
+    margin: spacing(1) 0 0;
+    font-weight: f-weight('bold');
+    text-align: center;
+    color: color('white');
+
+    @include breakpoint('tablet') {
+      margin-top: spacing(2);
     }
 
-    &__content-container {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        padding: 0 spacing(6) spacing(10);
+    @include breakpoint('tablet-horizontal') {
+      @include font-size-half('small');
+      margin-top: spacing(3);
+      font-weight: f-weight('regular');
+      text-align: left;
+      color: color('waterloo');
+    }
+  }
 
-        @include breakpoint('tablet-horizontal') {
-            flex-grow: 1;
-            margin: 0 spacing(19) 0;
-            padding: spacing(6) 0;
-            max-width: spacing(110);
-        }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: spacing(4);
+    margin: 0 spacing(-6) spacing(-10);
+    padding: spacing(5) spacing(6) spacing(10);
+    background-color: color('white');
+    border-radius: 16px 16px 0px 0px;
 
-        @include breakpoint('desktop') {
-            padding: spacing(9) 0;
-        }
+    @include breakpoint('tablet') {
+      padding: spacing(11) spacing(12) spacing(16);
     }
 
-    &__header {
-        margin: auto 0;
-        padding: spacing(20) 0 spacing(22);
-
-        @include breakpoint('tablet-horizontal') {
-            margin: auto 0 0;
-            padding: 0;
-        }
+    @include breakpoint('tablet-horizontal') {
+      gap: spacing(3);
+      margin: spacing(8) 0 auto;
+      padding: 0;
     }
 
-    &__logo {
-        text-align: center;
+    @include breakpoint('desktop') {
+      gap: spacing(6);
+      margin-top: spacing(16);
+    }
+  }
 
-        @include breakpoint('tablet-horizontal') {
-            display: none;
-        }
+  &__checkbox-input {
+    display: none;
+
+    @include breakpoint('tablet-horizontal') {
+      display: block;
     }
 
-    &__title {
-        @include font-size-quarter('huge');
-        margin: spacing(3) 0 0;
-        font-weight: 700;
-        text-align: center;
-        color: color('white');
+    @include breakpoint('desktop') {
+      margin-top: spacing(2);
+    }
+  }
 
-        @include breakpoint('tablet-horizontal') {
-            @include font-size-quarter('xxlarge');
-            margin: 0;
-            text-align: left;
-            color: color('shark');
-        }
+  &__form-buttons {
+    display: flex;
+    gap: spacing(3);
+    margin-top: spacing(6);
+
+    @include breakpoint('tablet-horizontal') {
+      margin-top: spacing(3);
+    }
+  }
+
+  &__sign-with {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: spacing(3);
+    margin-top: spacing(1);
+
+    @include breakpoint('tablet-horizontal') {
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      gap: spacing(3);
+      margin-top: spacing(2);
     }
 
-    &__title-add {
-        display: none;
-        @include breakpoint('desktop') {
-            display: inline;
-        }
+    @include breakpoint('desktop') {
+      margin-top: spacing(10);
+    }
+  }
+
+  &__sign-with-title {
+    margin: 0;
+    color: color('waterloo');
+
+    @include breakpoint('tablet-horizontal') {
+      transform: translateY(-10%);
+    }
+  }
+
+  &__sign-with-icons {
+    display: flex;
+    gap: spacing(2);
+    margin: 0;
+    padding: 0;
+  }
+
+  &__sign-with-icon-container {
+    display: block;
+    width: 46px;
+    height: 46px;
+    color: color('waterloo');
+    border: 1px solid;
+    border-radius: 8px;
+    border-color: currentColor;
+
+    &:hover {
+      color: color('cornflower-blue');
+      background-color: color('howkes-blue');
     }
 
-    &__sub-title {
-        margin: spacing(1) 0 0;
-        font-weight: 700;
-        text-align: center;
-        color: color('white');
-
-        @include breakpoint('tablet') {
-            margin-top: spacing(2);
-        }
-
-        @include breakpoint('tablet-horizontal') {
-            @include font-size-half('small');
-            margin-top: spacing(3);
-            font-weight: 400;
-            text-align: left;
-            color: color('waterloo');
-        }
+    &:focus {
+      //need add another color
+      color: color('san-marino');
+      background-color: color('howkes-blue');
     }
 
-    &__form {
-        display: flex;
-        flex-direction: column;
-        gap: spacing(4);
-        margin: 0 spacing(-6) spacing(-10);
-        padding: spacing(5) spacing(6) spacing(10);
-        background-color: color('white');
-        border-radius: 16px 16px 0px 0px;
-
-        @include breakpoint('tablet') {
-            padding: spacing(11) spacing(12) spacing(16);
-        }
-
-        @include breakpoint('tablet-horizontal') {
-            gap: spacing(3);
-            margin: spacing(8) 0 auto;
-            padding: 0;
-        }
-
-        @include breakpoint('desktop') {
-            gap: spacing(6);
-            margin-top: spacing(16);
-        }
+    &:active {
+      color: color('san-marino');
+      background-color: color('howkes-blue');
     }
 
-    &__checkbox-input {
-        display: none;
-
-        @include breakpoint('tablet-horizontal') {
-            display: block;
-        }
-
-        @include breakpoint('desktop') {
-            margin-top: spacing(2);
-        }
+    @include breakpoint('tablet-horizontal') {
+      width: 40px;
+      height: 40px;
     }
 
-    &__form-buttons {
-        display: flex;
-        gap: spacing(3);
-        margin-top: spacing(6);
+    @include breakpoint('desktop') {
+      width: 46px;
+      height: 46px;
+    }
+  }
 
-        @include breakpoint('tablet-horizontal') {
-            margin-top: spacing(3);
-        }
+  &__bg-image-container {
+    display: none;
+    @include breakpoint('tablet-horizontal') {
+      display: block;
+      width: 45%;
+      background-image: url('/img/index-page/vector-bg-main.svg');
+      background-position: right 30%;
+      background-size: 500px auto;
+      background-repeat: no-repeat;
     }
 
-    &__sign-with {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: spacing(3);
-        margin-top: spacing(1);
-
-        @include breakpoint('tablet-horizontal') {
-            flex-direction: row-reverse;
-            justify-content: flex-end;
-            gap: spacing(3);
-            margin-top: spacing(2);
-        }
-
-        @include breakpoint('desktop') {
-            margin-top: spacing(10);
-        }
+    @include breakpoint('desktop') {
+      background-size: 650px auto;
     }
-
-    &__sign-with-title {
-        margin: 0;
-        color: color('waterloo');
-
-        @include breakpoint('tablet-horizontal') {
-            transform: translateY(-10%);
-        }
-    }
-
-    &__sign-with-icons {
-        display: flex;
-        gap: spacing(2);
-        margin: 0;
-        padding: 0;
-    }
-
-    &__sign-with-icon-container {
-        display: block;
-        width: 46px;
-        height: 46px;
-        color: color('waterloo');
-        border: 1px solid;
-        border-radius: 8px;
-        border-color: currentColor;
-
-        &:hover {
-            color: color('cornflower-blue');
-            background-color: color('howkes-blue');
-        }
-
-        &:focus {
-            //need add another color
-            color: color('san-marino');
-            background-color: color('howkes-blue')
-        }
-
-        &:active {
-            color: color('san-marino');
-            background-color: color('howkes-blue')
-        }
-
-        @include breakpoint('tablet-horizontal') {
-            width: 40px;
-            height: 40px;
-        }
-
-        @include breakpoint('desktop') {
-            width: 46px;
-            height: 46px;
-        }
-    }
-
-    &__bg-image-container {
-        display: none;
-        @include breakpoint('tablet-horizontal') {
-            display: block;
-            width: 45%;
-            background-image: url('/img/index-page/vector-bg-main.svg');
-            background-position: right 30%;
-            background-size: 500px auto;
-            background-repeat: no-repeat;
-        }
-
-        @include breakpoint('desktop') {
-            background-size: 650px auto;
-        }
-    }
+  }
 }

@@ -1,0 +1,17 @@
+.h1 {
+  @include font-size-quarter('huge');
+  font-weight: f-weight('bold');
+
+  @include breakpoint('tablet-horizontal') {
+    @include font-size-quarter('xxlarge');
+  }
+}
+
+.t-weight {
+  @each $weight, $value in $font-weight {
+    @debug $weight, $value;
+    &-#{$weight} {
+      font-weight: $value;
+    }
+  }
+}

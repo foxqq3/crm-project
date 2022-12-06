@@ -1,27 +1,27 @@
 body {
-    // margin: 0;
-    // padding: 0;
-    @include font-size-half('medium');
-    font-family: map-get($font-family, 'main');
-    font-weight: 400;
-    // color: map-get($colors, "boulder");
-    // background-color: map-get($colors , "white");
+  // margin: 0;
+  // padding: 0;
+  @include font-size-half('medium');
+  font-family: map-get($font-family, 'main');
+  font-weight: f-weight('regular');
+  // color: map-get($colors, "boulder");
+  // background-color: map-get($colors , "white");
 }
 
 *,
 *:before,
 *:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ul li,
 menu li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }

@@ -1,47 +1,47 @@
 .app-input {
+  display: flex;
+  flex-direction: column;
+  gap: spacing(2);
+
+  &__label {
+    @include font-size-half('small');
+    color: color('waterloo');
+  }
+
+  &__input-container {
     display: flex;
-    flex-direction: column;
-    gap: spacing(2);
+    border-bottom: 1px solid;
+    border-color: color('athens-gray');
+  }
 
-    &__label {
-        @include font-size-half('small');
-        color: color('waterloo');
+  &__entry-field {
+    @include font-size-half('small');
+    width: 100%;
+    padding: 0 spacing(1) spacing(5) 0;
+    font-weight: f-weight('bold');
+    border: none;
+
+    &::placeholder {
+      color: color('waterloo');
     }
 
-    &__input-container {
-        display: flex;
-        border-bottom: 1px solid;
-        border-color: color('athens-gray');
+    &:focus {
+      outline: none;
+      background-color: color('howkes-blue');
     }
+  }
 
-    &__entry-field {
-        @include font-size-half('small');
-        width: 100%;
-        padding: 0 spacing(1) spacing(5) 0;
-        font-weight: 700;
-        border: none;
+  &__prepend-slot {
+    font-size: spacing(5);
+    color: color('waterloo');
+  }
 
-        &::placeholder {
-            color: color('waterloo');
-        }
+  &__append-slot {
+    font-size: spacing(5);
+    color: color('waterloo');
+  }
 
-        &:focus {
-            outline: none;
-            background-color: color('howkes-blue');
-        }
-    }
+  // &__message{
 
-    &__prepend-slot {
-        font-size: spacing(5);
-        color: color('waterloo')
-    }
-
-    &__append-slot {
-        font-size: spacing(5);
-        color: color('waterloo')
-    }
-
-    // &__message{
-
-    // }
+  // }
 }

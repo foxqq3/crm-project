@@ -14,17 +14,19 @@
 @import 'default-set';
 
 //utilits
-
+@import 'typography.scss';
 //components
 @import 'components/btn';
 @import 'components/app-input';
 @import 'components/app-icon';
 @import 'components/radio-input';
+
 //wrappers
 @import 'wrappers/default-containers';
 
 //layouts
 
 //pages
+
 //index-page
 @import 'pages/index-page/login';

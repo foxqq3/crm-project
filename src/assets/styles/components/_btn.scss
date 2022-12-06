@@ -1,37 +1,37 @@
 .btn {
-    @include text-ellipsis();
-    @include font-size-quarter('small');
-    display: inline-flex;
-    justify-content: center;
-    width: 100%;
-    padding: spacing(4) 0;
-    font-family: inherit;
-    font-weight: 700;
-    text-align: center;
-    color: color('cornflower-blue');
-    background-color: color('howkes-blue');
-    border: none;
-    border-radius: 8px;
-    transition: all 0.2s;
+  @include text-ellipsis();
+  @include font-size-quarter('small');
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  padding: spacing(4) 0;
+  font-family: inherit;
+  font-weight: f-weight('bold');
+  text-align: center;
+  color: color('cornflower-blue');
+  background-color: color('howkes-blue');
+  border: none;
+  border-radius: 8px;
+  transition: all 0.2s;
 
-    &:hover {
-        color: color('white');
-        background-color: color('san-marino');
-    }
+  &:hover {
+    color: color('white');
+    background-color: color('san-marino');
+  }
 
-    &:focus {
-        //need add another color
-        color: color('white');
-        background-color: color('cornflower-blue');
-    }
+  &:focus {
+    //need add another color
+    color: color('white');
+    background-color: color('cornflower-blue');
+  }
 
-    &:active {
-        color: color('white');
-        background-color: color('cornflower-blue');
-    }
+  &:active {
+    color: color('white');
+    background-color: color('cornflower-blue');
+  }
 
-    &:disabled {
-        color: color('waterloo');
-        background-color: color('wild-sand');
-    }
+  &:disabled {
+    color: color('waterloo');
+    background-color: color('wild-sand');
+  }
 }

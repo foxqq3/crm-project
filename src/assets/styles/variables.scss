@@ -3,40 +3,46 @@
 
 //breakpoints
 $breakpoint-default: (
-    'tablet': 600px,
-    'tablet-horizontal': 900px,
-    'desktop': 1200px,
+  'tablet': 600px,
+  'tablet-horizontal': 900px,
+  'desktop': 1200px,
 );
 
 // colors
 $colors: (
-    'san-marino': #475eaa,
-    'cornflower-blue': #5e81f4,
-    'howkes-blue': #eff2fe,
-    'waterloo': #8181a5,
-    'wild-sand': #f6f6f6,
-    'athens-gray': #f0f0f3,
-    'white': #ffffff,
-    'shark': #1c1d21,
-    'gareldine': #ff808b,
+  'san-marino': #475eaa,
+  'cornflower-blue': #5e81f4,
+  'howkes-blue': #eff2fe,
+  'waterloo': #8181a5,
+  'wild-sand': #f6f6f6,
+  'athens-gray': #f0f0f3,
+  'white': #ffffff,
+  'shark': #1c1d21,
+  'gareldine': #ff808b,
 );
 
 //fonts
 $font-family: (
-    'main': (
-        'Lato',
-        sans-serif,
-    ),
+  'main': (
+    'Lato',
+    sans-serif,
+  ),
 );
 
 $font-size: (
-    'xsmall': 12px,
-    'small': 14px,
-    'medium': 16px,
-    'large': 18px,
-    'xlarge': 20px,
-    'xxlarge': 26px,
-    'huge': 32px,
+  'xsmall': 12px,
+  'small': 14px,
+  'medium': 16px,
+  'large': 18px,
+  'xlarge': 20px,
+  'xxlarge': 26px,
+  'huge': 32px,
+);
+
+$font-weight: (
+  'regular': 400,
+  'medium': 500,
+  'bold': 700,
 );
 
 //spacing
