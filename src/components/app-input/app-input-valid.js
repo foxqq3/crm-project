@@ -20,14 +20,14 @@ export default () => {
 
     let test = () => {
       if (inputWrapper.querySelector('#full-name')) {
-        if (input.value !== '') {
-          validCondition.name = 'confrim';
-          return (validForInput = validCondition.name);
-        } else {
-          validCondition.name = 'clear';
-          return (validForInput = validCondition.name);
-        }
-      } else if (inputWrapper.querySelector('#email')) {
+        validCondition.name = input.value !== ''
+          ? 'confrim'
+          : 'clear';
+
+        return (validForInput = validCondition.name);
+      }
+
+      if (inputWrapper.querySelector('#email')) {
         if (EMAIL_REGEXP.test(input.value)) {
           validCondition.email = 'confrim';
           return (validForInput = validCondition.email);

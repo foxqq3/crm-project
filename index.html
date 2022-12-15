@@ -30,12 +30,12 @@
           </h1>
           <p class="login__sub-title">Enter your details to proceed further</p>
         </div>
-        <form class="login__form">
+        <form class="login__form" id="registration-form">
           <div class="app-input">
             <label for="full-name" class="app-input__label">Full name</label>
             <div class="app-input__input-container">
               <input type="text" id="full-name" class="app-input__entry-field" placeholder="Start typing…"
-                maxlength="100" />
+                maxlength="20" data-validate="full-name" required />
               <div class="app-input__append-slot">
                 <span class="app-icon">
                   <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -50,7 +50,7 @@
           <div class="app-input">
             <label for="email" class="app-input__label">Email</label>
             <div class="app-input__input-container">
-              <input type="email" id="email" class="app-input__entry-field" placeholder="Start typing…" />
+              <input type="email" id="email" class="app-input__entry-field" placeholder="Start typing…" data-validate="email" required />
               <div class="app-input__append-slot">
                 <span class="app-icon">
                   <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,7 +65,7 @@
           <div class="app-input">
             <label for="password" class="app-input__label">Password</label>
             <div class="app-input__input-container">
-              <input type="password" id="password" class="app-input__entry-field" placeholder="Start typing…" />
+              <input type="password" id="password" class="app-input__entry-field" placeholder="Start typing…" required minlength="8" maxlength="20" />
               <div class="app-input__append-slot">
                 <span class="app-icon">
                   <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -78,14 +78,18 @@
             </div>
           </div>
           <div class="checkbox-input login__checkbox-input">
-            <input type="checkbox" id="registration-agreement" class="checkbox-input__field">
+            <input type="checkbox" name="agreement" id="registration-agreement" class="checkbox-input__field" required>
             <label for="registration-agreement" class="checkbox-input__label .checkbox-input__label_error">
               I agree with terms & conditions
             </label>
           </div>
           <div class="login__form-buttons">
-            <input class="btn" type="submit" name="sign-up" value="Sign up" />
-            <input class="btn" type="submit" name="sign-in" value="Sign in" />
+            <button type="submit" class="btn" name="sign-up">
+              Sign up
+            </button>
+            <button class="btn" name="sign-in">
+              Sign in
+            </button>
           </div>
           <div class="login__sign-with">
             <p class="login__sign-with-title">Or sign width</p>
