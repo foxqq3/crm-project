@@ -12,6 +12,18 @@
     display: flex;
     border-bottom: 1px solid;
     border-color: color('athens-gray');
+
+    &_focused {
+      border-color: color('cornflower-blue');
+    }
+
+    &_validation_true {
+      border-color: color('riptide');
+    }
+
+    &_validation_false {
+      border-color: color('gareldine');
+    }
   }
 
   &__entry-field {
@@ -20,6 +32,7 @@
     padding: 0 spacing(1) spacing(5) 0;
     font-weight: f-weight('bold');
     border: none;
+    background-color: color('white');
 
     &::placeholder {
       color: color('waterloo');
@@ -27,18 +40,39 @@
 
     &:focus {
       outline: none;
-      background-color: color('howkes-blue');
+    }
+
+    &_validation_true {
+      color: color('riptide');
+    }
+
+    &_validation_false {
+      color: color('gareldine');
     }
   }
 
   &__prepend-slot {
     font-size: spacing(5);
     color: color('waterloo');
+    &_focused {
+      color: color('cornflower-blue');
+    }
   }
 
   &__append-slot {
     font-size: spacing(5);
     color: color('waterloo');
+    &_focused {
+      color: color('cornflower-blue');
+    }
+
+    &_validation_true {
+      color: color('riptide');
+    }
+
+    &_validation_false {
+      color: color('gareldine');
+    }
   }
 
   // &__message{

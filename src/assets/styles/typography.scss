@@ -9,7 +9,7 @@
 
 .t-weight {
   @each $weight, $value in $font-weight {
-    @debug $weight, $value;
+    // @debug $weight, $value;
     &-#{$weight} {
       font-weight: $value;
     }

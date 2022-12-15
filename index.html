@@ -34,7 +34,8 @@
           <div class="app-input">
             <label for="full-name" class="app-input__label">Full name</label>
             <div class="app-input__input-container">
-              <input type="text" id="full-name" class="app-input__entry-field" placeholder="Start typing…" />
+              <input type="text" id="full-name" class="app-input__entry-field" placeholder="Start typing…"
+                maxlength="100" />
               <div class="app-input__append-slot">
                 <span class="app-icon">
                   <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -83,8 +84,8 @@
             </label>
           </div>
           <div class="login__form-buttons">
-            <input class="btn" type="button" value="Sign up" />
-            <input class="btn" type="button" value="Sign in" />
+            <input class="btn" type="submit" name="sign-up" value="Sign up" />
+            <input class="btn" type="submit" name="sign-in" value="Sign in" />
           </div>
           <div class="login__sign-with">
             <p class="login__sign-with-title">Or sign width</p>

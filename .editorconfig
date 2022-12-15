@@ -17,3 +17,4 @@ ij_html_quote_style = double
 [*.js]
 quote_type = single
 ij_javascript_use_double_quotes = false
+insert_final_newline = false
